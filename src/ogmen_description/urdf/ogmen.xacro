@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<robot name="ogmen" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find ogmen_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find ogmen_description)/urdf/ogmen.trans" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0002601655087414222 1.8020058980725258e-17 0.07997264614978274" rpy="0 0 0"/>
+    <mass value="31.695938027968158"/>
+    <inertia ixx="0.131924" iyy="0.132381" izz="0.210027" ixy="-0.0" iyz="0.0" ixz="0.000528"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="pa_12_nylon_pa_603cf_with_eos_p_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1">
+  <inertial>
+    <origin xyz="2.7755575615628914e-17 -0.0050000000000000044 0.0" rpy="0 0 0"/>
+    <mass value="1.0419484734712243"/>
+    <inertia ixx="0.001109" iyy="0.002201" izz="0.001109" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.035 0.105 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="pa_12_nylon_pa_603cf_with_eos_p_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.035 0.105 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1">
+  <inertial>
+    <origin xyz="6.938893903907228e-18 0.005000000000000018 0.0" rpy="0 0 0"/>
+    <mass value="1.0419484734712248"/>
+    <inertia ixx="0.001109" iyy="0.002201" izz="0.001109" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.035 -0.105 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="pa_12_nylon_pa_603cf_with_eos_p_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.035 -0.105 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin xyz="-5.908186836859213e-18 0.0 0.012499999999999983" rpy="0 0 0"/>
+    <mass value="0.7552585088770711"/>
+    <inertia ixx="0.000271" iyy="0.000271" izz="0.000463" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="polymide_kapton"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="0.0029286607078167354 -2.3412840616061812e-14 0.0" rpy="0 0 0"/>
+    <mass value="0.037775153384169265"/>
+    <inertia ixx="5e-06" iyy="3e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1 -0.0 -0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="pa_12_nylon_pa_603cf_with_eos_p_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1 -0.0 -0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ogmen_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="-0.035 -0.105 0.065" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="-0.035 0.105 0.065" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.0 0.0 0.135" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+<joint name="Rigid 4" type="fixed">
+  <origin xyz="0.1 0.0 0.08" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+</robot>
