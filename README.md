@@ -3,13 +3,12 @@
 - [x] Then converted ogmenbot to URDF using https://github.com/nilutpolkashyap/fusion2urdf plugin
 ## Rviz Launch
 - [x] Added rviz.launch along with all sensor data
-To Launch rviz
 ```
 ros2 launch ogmen_description rviz.launch.py
 ```
 ![image](https://github.com/krishna4104/ogmen_ws/assets/140909916/684f8f70-6d8f-4a8a-abed-30cace72f28d)
 - [x] Added spawn.launch.py
-To Launch rviz and gazebo
+  To launch rviz and gazebo
 ```
 ros2 launch ogmen_description rviz.launch.py
 ```
