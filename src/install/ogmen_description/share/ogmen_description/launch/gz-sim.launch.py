@@ -1,1 +1,0 @@
-/home/labster/Desktop/ogmen_ws/src/ogmen_description/launch/gz-sim.launch.py

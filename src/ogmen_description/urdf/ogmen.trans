@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
 <robot name="ogmen" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="right_wheel_joint_tran">
+<transmission name="Revolute 1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="right_wheel_joint">
+  <joint name="Revolute 1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="right_wheel_joint_actr">
+  <actuator name="Revolute 1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="left_wheel_joint_tran">
+<transmission name="Revolute 2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="left_wheel_joint">
+  <joint name="Revolute 2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="left_wheel_joint_actr">
+  <actuator name="Revolute 2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

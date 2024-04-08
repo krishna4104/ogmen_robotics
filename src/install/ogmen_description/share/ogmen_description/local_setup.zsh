@@ -1,1 +1,0 @@
-/home/labster/Desktop/ogmen_ws/src/build/ogmen_description/ament_cmake_environment_hooks/local_setup.zsh

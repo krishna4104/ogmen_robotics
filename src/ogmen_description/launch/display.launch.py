@@ -1,81 +1,64 @@
-import launch
-from launch.substitutions import Command, LaunchConfiguration
-import launch_ros
-from launch_ros.substitutions import FindPackageShare
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument
-from launch.conditions import IfCondition
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition, UnlessCondition
+import xacro
 import os
-from launch_ros.descriptions import ParameterValue
+from ament_index_python.packages import get_package_share_directory
+
 
 def generate_launch_description():
-    # Constants for paths to different files and folders
-    package_name = 'ogmen_description'
-    robot_name_in_model = 'ogmen'
-    robot_model_path = 'urdf/ogmen.xacro'
-    rviz_config_path = 'config/rviz_default.rviz'
+    share_dir = get_package_share_directory('ogmen_description')
 
-    # Set path to files and directories
-    pkg_share = FindPackageShare(package=package_name).find(package_name)
-    default_robot_model_path = os.path.join(pkg_share, robot_model_path)
-    default_rviz_config_path = os.path.join(pkg_share, rviz_config_path)
+    xacro_file = os.path.join(share_dir, 'urdf', 'ogmen.xacro')
+    robot_description_config = xacro.process_file(xacro_file)
+    robot_urdf = robot_description_config.toxml()
 
-    # Launch configuration variables specific to simulation
-    use_sim_time = LaunchConfiguration('use_sim_time')
-    urdf_model = LaunchConfiguration('urdf_model')
-    rviz_config_file = LaunchConfiguration('rviz_config_file')
+    rviz_config_file = os.path.join(share_dir, 'config', 'display.rviz')
 
-    # Declare the launch arguments
-    declare_use_sim_time = DeclareLaunchArgument(
-        name='use_sim_time',
-        default_value='false',
-        description='Use simulation (Gazebo) clock if true')
+    gui_arg = DeclareLaunchArgument(
+        name='gui',
+        default_value='True'
+    )
 
-    declare_robot_model_path = DeclareLaunchArgument(
-        name='urdf_model', 
-        default_value=default_robot_model_path, 
-        description='Absolute path to robot urdf file')
+    show_gui = LaunchConfiguration('gui')
 
-    declare_rviz_config_path = DeclareLaunchArgument(
-        name='rviz_config_file',
-        default_value=default_rviz_config_path,
-        description='Absolute path to rviz config file')
-
-    # Publish the 3D pose of each link of robot  
-    start_robot_state_publisher_node = Node(
+    robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'use_sim_time': use_sim_time},{'robot_description': ParameterValue(Command(['xacro ', default_robot_model_path]),value_type=str)}]
-        )
+        name='robot_state_publisher',
+        parameters=[
+            {'robot_description': robot_urdf}
+        ]
+    )
 
-    # Publish the joint states of the robot
-    start_joint_state_publisher_node = Node(
+    joint_state_publisher_node = Node(
+        condition=UnlessCondition(show_gui),
         package='joint_state_publisher',
         executable='joint_state_publisher',
-        name='joint_state_publisher',
-        parameters= [{'use_sim_time': use_sim_time}])
+        name='joint_state_publisher'
+    )
 
-    # Launch RViz
-    start_rviz_node = Node(
+    joint_state_publisher_gui_node = Node(
+        condition=IfCondition(show_gui),
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        name='joint_state_publisher_gui'
+    )
+
+    rviz_node = Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
-        output='screen',
         arguments=['-d', rviz_config_file],
-        parameters= [{'use_sim_time': use_sim_time}])
+        output='screen'
+    )
 
-    # Create the launch description and populate
-    ld = LaunchDescription()
- 
-    # Declare the launch options
-    ld.add_action(declare_use_sim_time)
-    ld.add_action(declare_robot_model_path)
-    ld.add_action(declare_rviz_config_path)
-    
-    # Add any actions
-    ld.add_action(start_joint_state_publisher_node)
-    ld.add_action(start_robot_state_publisher_node)
-    ld.add_action(start_rviz_node)
-    
-    return ld
+    return LaunchDescription([
+        gui_arg,
+        robot_state_publisher_node,
+        joint_state_publisher_node,
+        joint_state_publisher_gui_node,
+        rviz_node
+    ])
