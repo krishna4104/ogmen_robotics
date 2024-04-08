@@ -1,0 +1,143 @@
+[0.032s] Invoking command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/labster/Desktop/ogmen_ws/src/ogmen_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/labster/Desktop/ogmen_ws/install/ogmen_description
+[1.302s] -- The C compiler identification is GNU 11.4.0
+[1.957s] -- The CXX compiler identification is GNU 11.4.0
+[2.033s] -- Detecting C compiler ABI info
+[2.228s] -- Detecting C compiler ABI info - done
+[2.243s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.246s] -- Detecting C compile features
+[2.260s] -- Detecting C compile features - done
+[2.274s] -- Detecting CXX compiler ABI info
+[2.415s] -- Detecting CXX compiler ABI info - done
+[2.422s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.422s] -- Detecting CXX compile features
+[2.422s] -- Detecting CXX compile features - done
+[2.448s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.697s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.824s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.948s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[3.142s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[3.176s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[3.176s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[3.176s]   does not match the name of the calling package (gazebo).  This can lead to
+[3.176s]   problems in calling code that expects `find_package` result variables
+[3.176s]   (e.g., `_FOUND`) to follow a certain pattern.
+[3.176s] Call Stack (most recent call first):
+[3.176s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[3.176s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[3.176s]   CMakeLists.txt:12 (find_package)
+[3.176s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.176s] [0m
+[3.177s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[3.177s] -- Checking for module 'bullet>=2.82'
+[3.210s] --   Found bullet, version 3.05
+[3.460s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[3.561s] -- Found assimp: /usr/include (found version "5.2.0") 
+[3.690s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[4.084s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[4.188s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[4.210s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.251s] -- Searching for dependencies of ignition-math6
+[4.259s] -- Looking for OGRE...
+[4.259s] -- OGRE_PREFIX_WATCH changed.
+[4.265s] -- Checking for module 'OGRE'
+[4.287s] --   Found OGRE, version 1.9.0
+[4.344s] -- Found Ogre Ghadamon (1.9.0)
+[4.355s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[4.363s] -- Looking for OGRE_Paging...
+[4.372s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.372s] -- Looking for OGRE_Terrain...
+[4.380s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.381s] -- Looking for OGRE_Property...
+[4.386s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.386s] -- Looking for OGRE_RTShaderSystem...
+[4.392s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.392s] -- Looking for OGRE_Volume...
+[4.397s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[4.397s] -- Looking for OGRE_Overlay...
+[4.403s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[4.524s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.567s] -- Looking for ignition-transport8 -- found version 8.2.1
+[4.568s] -- Searching for dependencies of ignition-transport8
+[4.597s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[4.635s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[4.646s] -- Checking for module 'libzmq >= 4'
+[4.713s] --   Found libzmq , version 4.3.4
+[4.809s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[4.828s] -- Checking for module 'uuid'
+[4.880s] --   Found uuid, version 2.37.2
+[4.977s] -- Found UUID: TRUE  
+[5.008s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.009s] -- Searching for dependencies of ignition-msgs5
+[5.061s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.076s] -- Checking for module 'tinyxml2'
+[5.113s] --   Found tinyxml2, version 9.0.0
+[5.209s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.218s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.219s] -- Searching for dependencies of ignition-common3
+[5.222s] -- Looking for dlfcn.h - found
+[5.223s] -- Looking for libdl - found
+[5.224s] -- Found DL: TRUE  
+[5.263s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[5.268s] -- Searching for <ignition-common3> component [graphics]
+[5.282s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[5.283s] -- Searching for dependencies of ignition-common3-graphics
+[5.284s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.304s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[5.305s] -- Searching for dependencies of ignition-fuel_tools4
+[5.539s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[5.585s] -- Checking for module 'jsoncpp'
+[5.626s] --   Found jsoncpp, version 1.9.5
+[5.730s] -- Found JSONCPP: TRUE  
+[5.760s] -- Checking for module 'libzip'
+[5.796s] --   Found libzip, version 1.7.3
+[5.882s] -- Found ZIP: TRUE  
+[5.882s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.882s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.883s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.925s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[5.945s] -- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+[6.200s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.236s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.299s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.481s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.891s] -- Configuring done
+[6.903s] -- Generating done
+[6.908s] -- Build files have been written to: /home/labster/Desktop/ogmen_ws/build/ogmen_description
+[6.929s] Invoked command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/labster/Desktop/ogmen_ws/src/ogmen_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/labster/Desktop/ogmen_ws/install/ogmen_description
+[6.934s] Invoking command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/labster/Desktop/ogmen_ws/build/ogmen_description -- -j12 -l12
+[6.997s] Invoked command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/labster/Desktop/ogmen_ws/build/ogmen_description -- -j12 -l12
+[7.052s] Invoking command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/labster/Desktop/ogmen_ws/build/ogmen_description
+[7.060s] -- Install configuration: ""
+[7.060s] -- Execute custom install script
+[7.062s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/display.launch.py
+[7.082s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/gazebo.launch.py
+[7.092s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/gz-sim.launch.py
+[7.103s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/meshes/base_link.stl
+[7.113s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/meshes/camera_1.stl
+[7.124s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/meshes/left_wheel_1.stl
+[7.133s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/meshes/lidar_1.stl
+[7.143s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/meshes/right_wheel_1.stl
+[7.154s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/materials.xacro
+[7.174s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.gazebo
+[7.193s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.trans
+[7.203s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.xacro
+[7.215s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/config/rviz_default.rviz
+[7.227s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/worlds/empty.world
+[7.238s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/worlds/empty_world.sdf
+[7.248s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ament_index/resource_index/package_run_dependencies/ogmen_description
+[7.258s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ament_index/resource_index/parent_prefix_path/ogmen_description
+[7.269s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/environment/ament_prefix_path.sh
+[7.279s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/environment/ament_prefix_path.dsv
+[7.288s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/environment/path.sh
+[7.299s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/environment/path.dsv
+[7.308s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/local_setup.bash
+[7.318s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/local_setup.sh
+[7.328s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/local_setup.zsh
+[7.339s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/local_setup.dsv
+[7.350s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.dsv
+[7.362s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ament_index/resource_index/packages/ogmen_description
+[7.373s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/cmake/ogmen_descriptionConfig.cmake
+[7.383s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/cmake/ogmen_descriptionConfig-version.cmake
+[7.404s] -- Symlinking: /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.xml
+[7.428s] Invoked command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/labster/Desktop/ogmen_ws/build/ogmen_description

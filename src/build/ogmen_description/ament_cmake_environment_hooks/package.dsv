@@ -1,0 +1,4 @@
+source;share/ogmen_description/local_setup.bash
+source;share/ogmen_description/local_setup.dsv
+source;share/ogmen_description/local_setup.sh
+source;share/ogmen_description/local_setup.zsh

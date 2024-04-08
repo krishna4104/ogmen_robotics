@@ -16,7 +16,7 @@ def generate_launch_description():
     robot_name_in_model = 'ogmen'
     robot_model_path = 'urdf/ogmen.xacro'
     rviz_config_path = 'config/rviz_default.rviz'
-    world_file_path = 'worlds/empty.world'
+    world_file_path = 'worlds/ogmen_world.world'
 
     # Pose where to spawn the robot
     spawn_x_val = '0.0'

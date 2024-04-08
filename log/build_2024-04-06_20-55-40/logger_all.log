@@ -1,0 +1,215 @@
+[0.095s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.095s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4241840a30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4241840250>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4241840250>>)
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.238s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/labster/Desktop/ogmen_ws'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/ogmen_description) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ogmen_description' with type 'ros.ament_cmake' and name 'ogmen_description'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[0.253s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.270s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/labster/Desktop/ogmen_ws/install
+[0.271s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/labster/microros_ws/src/install
+[0.272s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 280 installed packages in /opt/ros/humble
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'ogmen_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'ogmen_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/labster/Desktop/ogmen_ws/build/ogmen_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/labster/Desktop/ogmen_ws/install/ogmen_description', 'merge_install': False, 'path': '/home/labster/Desktop/ogmen_ws/src/ogmen_description', 'symlink_install': True, 'test_result_base': None}
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/labster/Desktop/ogmen_ws/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.321s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.322s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/labster/Desktop/ogmen_ws/src/ogmen_description' with build type 'ament_cmake'
+[0.322s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/labster/Desktop/ogmen_ws/src/ogmen_description'
+[0.324s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.328s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/labster/Desktop/ogmen_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[0.328s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/labster/Desktop/ogmen_ws/src/sllidar_ros2'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/labster/Desktop/ogmen_ws/build/ogmen_description -- -j12 -l12
+[0.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/labster/Desktop/ogmen_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/labster/Desktop/ogmen_ws/install/sllidar_ros2
+[0.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/labster/Desktop/ogmen_ws/build/ogmen_description -- -j12 -l12
+[0.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/labster/Desktop/ogmen_ws/build/ogmen_description
+[0.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ogmen_description)
+[0.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/labster/Desktop/ogmen_ws/build/ogmen_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/labster/Desktop/ogmen_ws/build/ogmen_description
+[0.583s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description' for CMake module files
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description' for CMake config files
+[0.586s] Level 1:colcon.colcon_core.shell:create_environment_hook('ogmen_description', 'cmake_prefix_path')
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/hook/cmake_prefix_path.ps1'
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/hook/cmake_prefix_path.dsv'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/hook/cmake_prefix_path.sh'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/bin'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/pkgconfig/ogmen_description.pc'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/bin'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.ps1'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.dsv'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.sh'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.bash'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.zsh'
+[0.592s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/colcon-core/packages/ogmen_description)
+[0.622s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ogmen_description)
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description' for CMake module files
+[0.623s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description' for CMake config files
+[0.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('ogmen_description', 'cmake_prefix_path')
+[0.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/hook/cmake_prefix_path.ps1'
+[0.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/hook/cmake_prefix_path.dsv'
+[0.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/hook/cmake_prefix_path.sh'
+[0.626s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/bin'
+[0.626s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/pkgconfig/ogmen_description.pc'
+[0.626s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages'
+[0.626s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/ogmen_description/bin'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.ps1'
+[0.627s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.dsv'
+[0.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.sh'
+[0.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.bash'
+[0.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.zsh'
+[0.630s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/colcon-core/packages/ogmen_description)
+[3.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/labster/Desktop/ogmen_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/labster/Desktop/ogmen_ws/install/sllidar_ros2
+[3.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/labster/Desktop/ogmen_ws/build/sllidar_ros2 -- -j12 -l12
+[12.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/labster/Desktop/ogmen_ws/build/sllidar_ros2 -- -j12 -l12
+[12.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/labster/Desktop/ogmen_ws/build/sllidar_ros2
+[13.432s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[13.433s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2' for CMake module files
+[13.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/labster/Desktop/ogmen_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/labster/Desktop/ogmen_ws/build/sllidar_ros2
+[13.433s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2' for CMake config files
+[13.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[13.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[13.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[13.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/lib'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/bin'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[13.436s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/bin'
+[13.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[13.436s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[13.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[13.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[13.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[13.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[13.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[13.530s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2' for CMake module files
+[13.531s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2' for CMake config files
+[13.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[13.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[13.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[13.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[13.535s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/lib'
+[13.535s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/bin'
+[13.535s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[13.535s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[13.536s] Level 1:colcon.colcon_core.environment:checking '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/bin'
+[13.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[13.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[13.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[13.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[13.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[13.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/labster/Desktop/ogmen_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[13.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.542s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.542s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.542s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.557s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.557s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.557s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.580s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.580s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/labster/Desktop/ogmen_ws/install/local_setup.ps1'
+[13.582s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/labster/Desktop/ogmen_ws/install/_local_setup_util_ps1.py'
+[13.584s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/labster/Desktop/ogmen_ws/install/setup.ps1'
+[13.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/labster/Desktop/ogmen_ws/install/local_setup.sh'
+[13.585s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/labster/Desktop/ogmen_ws/install/_local_setup_util_sh.py'
+[13.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/labster/Desktop/ogmen_ws/install/setup.sh'
+[13.587s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/labster/Desktop/ogmen_ws/install/local_setup.bash'
+[13.587s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/labster/Desktop/ogmen_ws/install/setup.bash'
+[13.588s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/labster/Desktop/ogmen_ws/install/local_setup.zsh'
+[13.589s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/labster/Desktop/ogmen_ws/install/setup.zsh'

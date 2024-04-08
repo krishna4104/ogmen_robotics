@@ -13,6 +13,7 @@
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/config/rviz_default.rviz
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/worlds/empty.world
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/worlds/empty_world.sdf
+/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/worlds/ogmen_world.world
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ament_index/resource_index/package_run_dependencies/ogmen_description
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ament_index/resource_index/parent_prefix_path/ogmen_description
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/environment/ament_prefix_path.sh
