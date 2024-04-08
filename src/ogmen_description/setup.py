@@ -26,6 +26,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'filter = ogmen_description.reading_laser:main',
+            'mover = ogmen_description.move:main',
         ],
     },
 )

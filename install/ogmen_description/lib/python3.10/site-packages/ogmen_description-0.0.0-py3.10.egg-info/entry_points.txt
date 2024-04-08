@@ -1,3 +1,4 @@
 [console_scripts]
-
+filter = ogmen_description.reading_laser:main
+mover = ogmen_description.move:main
 

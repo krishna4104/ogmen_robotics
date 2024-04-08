@@ -12,7 +12,16 @@
   <depend>robot_state_publisher</depend>
   <depend>joint_state_publisher</depend>
   <depend>joint_state_publisher_gui</depend>
-
+  <!-- Add build and exec dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclpy</build_depend>
+  
+  <!-- Add run dependencies -->
+  <exec_depend>geometry_msgs</exec_depend> <!-- If your script uses geometry_msgs -->
+  <exec_depend>nav_msgs</exec_depend> <!-- If your script uses nav_msgs -->
+  <exec_depend>sensor_msgs</exec_depend> <!-- If your script uses sensor_msgs -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

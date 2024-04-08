@@ -9,7 +9,6 @@ setup.py
 ../../build/ogmen_description/ogmen_description.egg-info/top_level.txt
 ../../build/ogmen_description/ogmen_description.egg-info/zip-safe
 config/display.rviz
-launch/cgazebo.launch.py
 launch/display.launch.py
 launch/gazebo.launch.py
 meshes/base_link.stl
@@ -18,6 +17,8 @@ meshes/left_wheel_1.stl
 meshes/lidar_1.stl
 meshes/right_wheel_1.stl
 ogmen_description/__init__.py
+ogmen_description/move.py
+ogmen_description/reading_laser.py
 resource/ogmen_description
 test/test_copyright.py
 test/test_flake8.py
