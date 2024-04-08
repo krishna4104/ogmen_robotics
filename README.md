@@ -1,5 +1,6 @@
 # Ogmen Robotics Task
 - [x] First Created URDF model using Fusion 360
+![image](https://github.com/krishna4104/ogmen_ws/assets/140909916/10f16476-7c5c-4fc1-99d5-54800160555d)
 - [x] Then converted ogmenbot to URDF using https://github.com/nilutpolkashyap/fusion2urdf plugin
 ## Rviz Launch
 - [x] Added rviz.launch along with all sensor data
