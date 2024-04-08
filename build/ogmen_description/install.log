@@ -4,6 +4,7 @@
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.xml
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/display.launch.py
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/gazebo.launch.py
+/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/cgazebo.launch.py
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.trans
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.xacro
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.gazebo
