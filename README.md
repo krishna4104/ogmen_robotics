@@ -6,6 +6,7 @@
 ```
 ros2 launch ogmen_description rviz.launch.py
 ```
+## Gazebo and Move
 ![image](https://github.com/krishna4104/ogmen_ws/assets/140909916/684f8f70-6d8f-4a8a-abed-30cace72f28d)
 - [x] Added spawn.launch.py
   To launch rviz and gazebo
