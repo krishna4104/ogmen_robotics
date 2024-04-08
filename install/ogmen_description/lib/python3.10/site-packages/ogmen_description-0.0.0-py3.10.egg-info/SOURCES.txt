@@ -9,8 +9,8 @@ setup.py
 ../../build/ogmen_description/ogmen_description.egg-info/top_level.txt
 ../../build/ogmen_description/ogmen_description.egg-info/zip-safe
 config/display.rviz
-launch/display.launch.py
-launch/gazebo.launch.py
+launch/rviz.launch.py
+launch/spawn.launch.py
 meshes/base_link.stl
 meshes/camera_1.stl
 meshes/left_wheel_1.stl

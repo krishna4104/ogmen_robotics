@@ -1,0 +1,27 @@
+[0.559s] Invoking command in '/home/labster/Desktop/ogmen_ws/src/ogmen_description': PYTHONPATH=/home/labster/Desktop/ogmen_ws/build/ogmen_description/prefix_override:/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ogmen_description build --build-base /home/labster/Desktop/ogmen_ws/build/ogmen_description/build install --record /home/labster/Desktop/ogmen_ws/build/ogmen_description/install.log --install-scripts $base/lib/ogmen_description --single-version-externally-managed install_data
+[0.776s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.776s]   warnings.warn(
+[0.783s] running egg_info
+[0.784s] writing ../../build/ogmen_description/ogmen_description.egg-info/PKG-INFO
+[0.784s] writing dependency_links to ../../build/ogmen_description/ogmen_description.egg-info/dependency_links.txt
+[0.786s] writing entry points to ../../build/ogmen_description/ogmen_description.egg-info/entry_points.txt
+[0.788s] writing requirements to ../../build/ogmen_description/ogmen_description.egg-info/requires.txt
+[0.789s] writing top-level names to ../../build/ogmen_description/ogmen_description.egg-info/top_level.txt
+[0.792s] reading manifest file '../../build/ogmen_description/ogmen_description.egg-info/SOURCES.txt'
+[0.793s] writing manifest file '../../build/ogmen_description/ogmen_description.egg-info/SOURCES.txt'
+[0.793s] running build
+[0.793s] running build_py
+[0.794s] copying ogmen_description/reading_laser.py -> /home/labster/Desktop/ogmen_ws/build/ogmen_description/build/lib/ogmen_description
+[0.794s] running install
+[0.794s] running install_lib
+[0.794s] copying /home/labster/Desktop/ogmen_ws/build/ogmen_description/build/lib/ogmen_description/reading_laser.py -> /home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages/ogmen_description
+[0.795s] byte-compiling /home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages/ogmen_description/reading_laser.py to reading_laser.cpython-310.pyc
+[0.796s] running install_data
+[0.797s] running install_egg_info
+[0.798s] removing '/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages/ogmen_description-0.0.0-py3.10.egg-info' (and everything under it)
+[0.799s] Copying ../../build/ogmen_description/ogmen_description.egg-info to /home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages/ogmen_description-0.0.0-py3.10.egg-info
+[0.800s] running install_scripts
+[0.818s] Installing filter script to /home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/ogmen_description
+[0.818s] Installing mover script to /home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/ogmen_description
+[0.819s] writing list of installed files to '/home/labster/Desktop/ogmen_ws/build/ogmen_description/install.log'
+[0.848s] Invoked command in '/home/labster/Desktop/ogmen_ws/src/ogmen_description' returned '0': PYTHONPATH=/home/labster/Desktop/ogmen_ws/build/ogmen_description/prefix_override:/home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ogmen_description build --build-base /home/labster/Desktop/ogmen_ws/build/ogmen_description/build install --record /home/labster/Desktop/ogmen_ws/build/ogmen_description/install.log --install-scripts $base/lib/ogmen_description --single-version-externally-managed install_data

@@ -27,8 +27,8 @@ class ScanFilter(Node):
         filtered_angles = []
 
         # Define range of angles to keep
-        min_angle = 0
-        max_angle = 2.0944  # 120 degrees in radians
+        min_angle = -1.0472
+        max_angle = 1.0472  # 120 degrees in radians
 
         # Calculate corresponding indices for min_angle and max_angle
         min_index = int(min_angle / msg.angle_increment)

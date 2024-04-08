@@ -6,8 +6,8 @@
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/lib/python3.10/site-packages/ogmen_description/__pycache__/__init__.cpython-310.pyc
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ament_index/resource_index/packages/ogmen_description
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/package.xml
-/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/display.launch.py
-/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/gazebo.launch.py
+/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/spawn.launch.py
+/home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/launch/rviz.launch.py
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.trans
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.xacro
 /home/labster/Desktop/ogmen_ws/install/ogmen_description/share/ogmen_description/urdf/ogmen.gazebo
