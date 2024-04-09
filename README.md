@@ -20,7 +20,7 @@ ros2 launch ogmen_description rviz.launch.py
 ros2 run ogmen_description filter
 ```
 ![image](https://github.com/krishna4104/ogmen_ws/assets/140909916/dcf3e31d-86ad-4489-8f4c-fa03ae945161)
-- [x] (Working) on Move.py - this file will read a list waypoints coordinates [x (meters), y (meters), yaw_angle(degrees)] : [0,0,0] [5,0,45] [5,5,90] [0,5,0] [0,0,135]
+- [_] (Working) on Move.py - this file will read a list waypoints coordinates [x (meters), y (meters), yaw_angle(degrees)] : [0,0,0] [5,0,45] [5,5,90] [0,5,0] [0,0,135]
 ## To drive around
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
